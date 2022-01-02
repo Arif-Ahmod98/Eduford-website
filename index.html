@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <title>Eford -Arif</title>
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/ba2b6da4f2.js" crossorigin="anonymous"></script>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+<!-- 
+  =====================================
+                                HEADER SECTION
+======================================
+ -->
+
+<header>
+    <main>
+        <nav>
+            <img src="images/logo.png" alt="logo" class="logo">
+           <div id="menuLinks">
+            
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul id="menu-lists">
+              <li><a href="#">HOME </a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">COURSE</a></li>
+              <li><a href="#">BLOG </a></li>
+              <li><a href="#">CONTACT</a></li>
+          </ul>
+           </div>
+           <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>World Biggest University</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia iure cumque explicabo ratione! 
+            Cum illo fugiat, voluptas, veniam error rerum aperiam,facere praesentium 
+           </p>
+            <button type="button" class="default-btn">Visit Us To Know More</button>
+        </div>
+    </main>
+    </div>
+</header>
+
+<!-- 
+  =====================================
+                                COURSES SECTION
+======================================
+ -->
+
+<script>
+
+  let menuLinks = document.getElementById("menuLinks");
+  function showMenu() {
+    menuLinks.style.right = ("0px");
+  };
+  function hideMenu() {
+    menuLinks.style.right = ("-200px");
+  }
+</script>
+  </body>
+</html>
