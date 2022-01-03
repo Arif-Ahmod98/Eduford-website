@@ -27,6 +27,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  width: 100%;
 }
 
 nav {
@@ -97,47 +98,6 @@ img.logo {
 }
 nav .fas {
   display: none;
-}
-@media only screen and (max-width: 768px) {
-  nav .fas {
-    display: block;
-    margin: 10px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 22px;
-  }
-  #menuLinks {
-    position: fixed;
-    top: 0px;
-    right: -200px;
-    background: #f44336;
-    width: 200px;
-    min-height: 100vh;
-    transition: 0.5s;
-  }
-  #menu-lists {
-    padding: 28px 40px;
-    text-align: left;
-    box-sizing: border-box;
-  }
-  #menu-lists li {
-    display: block;
-    margin-bottom: 25px;
-    margin-left: 0px;
-  }
-  #menu-lists li::after {
-    background-color: #fff;
-  }
-  .header-text {
-    margin-top: 25px;
-  }
-  .header-text h1 {
-    font-size: 35px;
-    margin-bottom: 16px;
-  }
-  .header-text p {
-    font-size: 14px;
-  }
 }
 
 /* 
@@ -499,7 +459,7 @@ tbody tr td {
   border-radius: 5px;
   outline: none;
 }
-textarea {
+.form-col form textarea {
   width: 100%;
   display: block;
   background: #f0f0f0;
@@ -518,4 +478,222 @@ textarea {
 .form-col .default-btn:hover {
   color: #fff;
   border: 1px solid transparent;
+}
+
+/* 
+========================================================
+                                              Contact page
+========================================================
+
+*/
+#location {
+  padding: 80px 0px;
+}
+#location iframe {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+/**************** Contact conent*******************/
+#contact-content {
+  padding: 50px 0px;
+}
+.contact-col {
+  flex-basis: 48%;
+}
+.contact-col ul {
+  list-style-type: none;
+}
+.contact-col li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+}
+.contact-col li span {
+  display: block;
+  margin-right: 25px;
+  font-size: 22px;
+  color: #f44336;
+}
+.right-text h3 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #000000a6;
+}
+.right-text p {
+  text-align: left;
+}
+.contact-col2 {
+  flex-basis: 48%;
+}
+.contact-col2 form input {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+.contact-col2 form textarea {
+  display: block;
+  min-height: 40vh;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+/* *******************
+========================
+
+Responsive website max-width = 768px
+------------Home page-------
+===========================
+********************/
+
+@media only screen and (max-width: 768px) {
+  main {
+    max-width: 88%;
+  }
+  nav .fas {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+  }
+  #menuLinks {
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    background: #f44336;
+    width: 200px;
+    min-height: 100vh;
+    transition: 0.5s;
+    z-index: 99;
+  }
+  #menu-lists {
+    padding: 28px 40px;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  #menu-lists li {
+    display: block;
+    margin-bottom: 25px;
+    margin-left: 0px;
+  }
+  #menu-lists li::after {
+    background-color: #fff;
+  }
+  .header-text {
+    margin-top: 50px;
+  }
+  .header-text h1 {
+    font-size: 34px;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .header-text p {
+    font-size: 14px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .course-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  #course-main {
+    padding: 50px 0px;
+  }
+  #global-main {
+    padding: 20px 0px;
+  }
+  .layer {
+    display: none;
+  }
+  .global-title {
+    margin-bottom: 60px;
+  }
+  .campus-col img {
+    width: 100%;
+  }
+  .students-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .default-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+/* *******************
+========================
+
+Responsive website max-width = 768px
+------------About page-------
+===========================
+********************/
+
+@media only screen and (max-width: 768px) {
+  #university-main {
+    padding-top: 85px;
+  }
+  #university-main .row {
+    flex-direction: column-reverse;
+  }
+  .universiy-col {
+    flex-basis: 100%;
+    margin-bottom: 45px;
+  }
+  footer {
+    padding: 50px 20px;
+  }
+}
+/* *******************
+========================
+
+Responsive website max-width = 768px
+------------Blog page-------
+===========================
+********************/
+@media only screen and (max-width: 768px) {
+  .about-title h1 {
+    margin-top: 70px;
+  }
+  .post-col {
+    flex-basis: 100%;
+  }
+  .post-col2 {
+    display: none;
+  }
+}
+
+/* *******************
+========================
+
+Responsive website max-width = 768px
+------------Contact page-------
+===========================
+********************/
+@media only screen and (max-width: 768px) {
+  #contact-content .row {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0px 40px;
+  }
+  .contact-col {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+}
+  .contact-col li {
+    justify-content: flex-start;
+   
+}
+  .contact-col li span {
+    margin-right: 38px;
 }

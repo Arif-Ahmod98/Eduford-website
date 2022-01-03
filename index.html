@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
     <title>Eduford -Arif</title>
-
+    
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/ba2b6da4f2.js" crossorigin="anonymous"></script>
     <!-- Css Link -->
+    <link rel="stylesheet" href="AOS/aos.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -33,12 +34,12 @@
               <li><a href="about-us.html">ABOUT US</a></li>
               <li><a href="course.html">COURSE</a></li>
               <li><a href="blog.html">BLOG </a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
           </ul>
            </div>
            <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="header-text">
+        <div class="header-text"data-aos="fade-up">
           <h1>World Biggest University</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia iure cumque explicabo ratione! 
             Cum illo fugiat, voluptas, veniam error rerum aperiam,facere praesentium 
@@ -56,8 +57,8 @@
  -->
 <section id="course-main">
   <main>
-    <div class="course-title">
-      <h1 class="default-title">Courses We Offer</h1>
+    <div class="course-title" data-aos="fade-left" data-aos-duration="1500">
+      <h1 class="default-title" >Courses We Offer</h1>
       <p class="default-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,</p>
     </div>
     <div class="row">
@@ -89,24 +90,26 @@
 
 <section id="global-main">
   <main>
-    <div class="global-title">
+    <div class="global-title" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <h1 class="default-title">Our Global Campus</h1>
       <p class="default-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, accusantium!</p>
     </div>
     <div class="row">
-      <div class="campus-col">
+      <div class="campus-col" data-aos="fade-right" data-aos-duration="1500">
         <img src="images/london.png">
         <div class="layer">
           <h3>LONDON</h3>
         </div>
       </div>
-      <div class="campus-col">
+      <div class="campus-col" data-aos="fade-up" data-aos-duration="1500">
         <img src="images/newyork.png">
         <div class="layer">
           <h3>NEW YORK</h3>
         </div>
       </div>
-      <div class="campus-col">
+      <div class="campus-col" data-aos="fade-left" data-aos-duration="5000">
         <img src="images/washington.png">
         <div class="layer">
           <h3>WASHINGTON</h3>
@@ -123,27 +126,29 @@
 
 <section id="facilities-main">
   <main>
-    <div class="facilities-title">
+    <div class="facilities-title"data-aos="fade-up"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <h1 class="default-title">Our Facilities</h1>
       <p class="default-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit.</p>
     </div>
     <div class="row">
       <div class="facilities-col">
-       <img src="images/library.png" >
+       <img src="images/library.png" data-aos="flip-up">
        <div class="facilities-text">
          <h3>World Class Library</h3>
          <p class="default-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
        </div>
       </div>
       <div class="facilities-col">
-        <img src="images/basketball.png" >
+        <img src="images/basketball.png" data-aos="flip-down">
         <div class="facilities-text">
           <h3>Largest Play Court</h3>
           <p class="default-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
         </div>
        </div>
        <div class="facilities-col">
-        <img src="images/cafeteria.png" >
+        <img src="images/cafeteria.png" data-aos="flip-left">
         <div class="facilities-text">
           <h3>Healthy and Tasty Campus Cafeteria</h3>
           <p class="default-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
@@ -161,12 +166,12 @@
 
 <section id="students-main">
   <main>
-<div class="students-title">
+<div class="students-title" data-aos="zoom-in" data-aos-duration="1500">
   <h1 class="default-title">What our students says</h1>
   <p class="default-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit.</p>
 </div>
 <div class="row">
-  <div class="students-col">
+  <div class="students-col" data-aos="slide-right" data-aos-duration="1500" >
     <img src="images/user1.jpg" >
     <div class="user-says">
       <p class="default-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est quo sequi eum aspernatur eveniet quis porro illum sint quaerat?</p>
@@ -180,7 +185,7 @@
       </div>
     </div>
   </div>
-  <div class="students-col">
+  <div class="students-col" data-aos="slide-left" data-aos-duration="1500">
     <img src="images/user2.jpg" >
     <div class="user-says">
       <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum est quo sequi eum aspernatur eveniet quis porro illum sint quaerat?</p>
@@ -206,9 +211,9 @@
 
 <section id="contact-main">
 <main>
-  <div class="contact-background">
+  <div class="contact-background" >
 
-  <h1 class="default-title">Enroll For Our Various Online Courses <br>
+  <h1 class="default-title" data-aos="zoom-in" data-aos-duration="1500">Enroll For Our Various Online Courses <br>
     Anywhere From The World</h1>
     <button type="button" class="default-btn">Contact Us</button>
       
@@ -242,21 +247,21 @@
 
 </footer>
 
-
-
-
-
-
-
-
-
-
 <!-- 
   =====================================
                                Javascript for toogleMenu
 ======================================
  -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="AOS/aos.js"></script>
+ <script>
+   $(document).ready(function(){
 
+    AOS.init();
+
+   });
+
+ </script>
 <script>
 
   let menuLinks = document.getElementById("menuLinks");

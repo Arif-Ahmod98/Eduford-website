@@ -10,6 +10,7 @@
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/ba2b6da4f2.js" crossorigin="anonymous"></script>
     <!-- Css Link -->
+    <link rel="stylesheet" href="AOS/aos.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -33,13 +34,13 @@
             <li><a href="about-us.html">ABOUT US</a></li>
             <li><a href="course.html">COURSE</a></li>
             <li><a href="blog.html">BLOG </a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
          </div>
          <i class="fas fa-bars" onclick="showMenu()"></i>
       </nav>
     <div class="about-title">
-      <h1>Our Courses</h1>
+      <h1 data-aos="fade-left" data-aos-duration="1500">Our Courses</h1>
     </div>
   </main>
   </div>
@@ -52,7 +53,7 @@
  -->
 <section id="course-main">
   <main>
-    <div class="course-title">
+    <div class="course-title" data-aos="fade-right" data-aos-duration="1500">
       <h1 class="default-title">Courses We Offer</h1>
       <p class="default-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,</p>
     </div>
@@ -87,27 +88,28 @@
 
 <section id="facilities-main">
   <main>
-    <div class="facilities-title">
+    <div class="facilities-title" data-aos="fade-up"
+    data-aos-duration="1000">
       <h1 class="default-title">Our Facilities</h1>
       <p class="default-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, impedit.</p>
     </div>
     <div class="row">
       <div class="facilities-col">
-       <img src="images/library.png" >
+       <img src="images/library.png" data-aos="flip-left" data-aos-duration="1500" >
        <div class="facilities-text">
          <h3>World Class Library</h3>
          <p class="default-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
        </div>
       </div>
       <div class="facilities-col">
-        <img src="images/basketball.png" >
+        <img src="images/basketball.png" data-aos="flip-down" data-aos-duration="1500" >
         <div class="facilities-text">
           <h3>Largest Play Court</h3>
           <p class="default-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
         </div>
        </div>
        <div class="facilities-col">
-        <img src="images/cafeteria.png" >
+        <img src="images/cafeteria.png" data-aos="flip-right" data-aos-duration="1500" >
         <div class="facilities-text">
           <h3>Healthy and Tasty Campus Cafeteria</h3>
           <p class="default-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
@@ -116,12 +118,6 @@
     </div>
   </main>
 </section>
-
-
-
-
-
-
 
 <!-- 
   =====================================
@@ -148,21 +144,21 @@
 
 </footer>
 
-
-
-
-
-
-
-
-
-
 <!-- 
   =====================================
                                Javascript for toogleMenu
 ======================================
  -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="AOS/aos.js"></script>
+ <script>
+   $(document).ready(function(){
 
+    AOS.init();
+
+   });
+
+ </script>
 <script>
 
   let menuLinks = document.getElementById("menuLinks");

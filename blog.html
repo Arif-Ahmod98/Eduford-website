@@ -10,6 +10,7 @@
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/ba2b6da4f2.js" crossorigin="anonymous"></script>
     <!-- Css Link -->
+    <link rel="stylesheet" href="AOS/aos.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,13 +31,13 @@
                 <li><a href="about-us.html">ABOUT US</a></li>
                 <li><a href="course.html">COURSE</a></li>
                 <li><a href="blog.html">BLOG </a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
              </div>
              <i class="fas fa-bars" onclick="showMenu()"></i>
           </nav>
         <div class="about-title">
-          <h1>Our Certification & Online Programs for 2021</h1>
+          <h1  data-aos="zoom-in" data-aos-duration="1500">Our Certification & Online Programs for 2021</h1>
         </div>
       </main>
       </div>
@@ -50,9 +51,9 @@
   <main>
     <div class="row">
       <div class="post-col">
-        <img src="images/certificate.jpg" >
+        <img src="images/certificate.jpg" data-aos="zoom-in-right">
       </div>
-      <div class="post-col2">
+      <div class="post-col2" data-aos="zoom-in-left">
         <table>
           <thead>
             <tr>
@@ -88,7 +89,7 @@
         </table>
       </div>
     </div>
-    <div class="row">
+    <div class="row" data-aos="fade-right">
       <div class="certification-content">
         <h3>Our Certification & Online Programs for 2021</h3>
         <p class="default-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur similique, voluptatem numquam eveniet vitae deserunt. Quas alias sed inventore!</p>
@@ -141,20 +142,20 @@
 
 </footer>
 
-
-
-
-
-
-
-
-
-
 <!-- 
   =====================================
                                Javascript for toogleMenu
 ======================================
  -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="AOS/aos.js"></script>
+ <script>
+   $(document).ready(function(){
+
+    AOS.init();
+
+   });
+ </script>
 
 <script>
 
