@@ -20,7 +20,7 @@ img {
 ==================================
 
 */
-header {
+#home-header {
   background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/banner.png);
   background-size: cover;
   min-height: 100vh;
@@ -153,7 +153,7 @@ nav .fas {
   margin-bottom: 40px;
 }
 .default-title {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
@@ -373,4 +373,60 @@ footer {
 }
 .footer-bottom span i {
   color: #f44336;
+}
+
+/* 
+========================================================
+                                                ABOUT PAGE
+========================================================
+
+*/
+
+/* 
+========================
+          Header
+=========================
+
+*/
+#about-header {
+  width: 100%;
+  min-height: 60vh;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-title h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 37px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+#university-main {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+#university-main .row {
+  flex-direction: row-reverse;
+}
+.universiy-col {
+  flex-basis: 48%;
+}
+.universiy-col h1 {
+  text-align: left;
+  font-size: 36px;
+}
+.universiy-col p {
+  text-align: left;
+}
+.universiy-col .default-btn {
+  border-color: #f44336;
+  color: #f44336;
+  margin-left: 0px;
+}
+.universiy-col .default-btn:hover {
+  border-color: transparent;
+  color: #fff;
 }
