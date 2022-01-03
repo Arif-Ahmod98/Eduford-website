@@ -430,3 +430,92 @@ footer {
   border-color: transparent;
   color: #fff;
 }
+
+/* 
+========================================================
+                                                BLOG PAGE
+========================================================
+
+*/
+#post-main {
+  padding: 90px 0px;
+}
+.post-col {
+  flex-basis: 60%;
+}
+.post-col2 {
+  flex-basis: 35%;
+}
+table {
+  width: 100%;
+}
+table thead tr th {
+  background: #f44336;
+  padding: 10px !important;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 14px;
+  font-size: 19px;
+}
+
+tbody tr td {
+  padding: 10px 0px;
+}
+.certification-content {
+  margin-top: 30px;
+  flex-basis: 60%;
+}
+.certification-content p {
+  text-align: left;
+  margin: 20px 0px;
+}
+.certification-content h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.form-col {
+  flex-basis: 60%;
+  margin-top: 15px;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  padding: 22px 22px;
+}
+.form-col h4 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+
+.form-col form input {
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+textarea {
+  width: 100%;
+  display: block;
+  background: #f0f0f0;
+  min-height: 40vh;
+  border: none;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  outline: none;
+  border-radius: 5px;
+}
+.form-col .default-btn {
+  color: #f44336;
+  border: 1px solid #f44336;
+  margin-left: 0px;
+}
+.form-col .default-btn:hover {
+  color: #fff;
+  border: 1px solid transparent;
+}
